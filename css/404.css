@@ -39,12 +39,13 @@ a{
     border-radius: 10px;
     text-shadow:0 0 1px black;
     font-size:1.2em;
+    display:inline-block;
 }
 
 a:hover{
-    background-color: rgb(255, 148, 47);
     color:white;
     text-decoration: none;
+    animation: bouton 0.5s linear forwards;
 }
 
 i{
@@ -72,3 +73,12 @@ i{
     
     100%{top:50px;left:-300px; transform: scale(1);}
 }
+
+@keyframes bouton{
+    0%{transform:rotate(1deg)}
+    20%{transform:rotate(-1deg)}
+    40%{transform:rotate(1deg)}
+    60%{transform:rotate(-1deg)}
+    80%{transform:rotate(1deg)}
+    100%{transform:rotate(0deg);background-color: rgb(250, 154, 64);}
+} 

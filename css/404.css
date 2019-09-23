@@ -53,25 +53,30 @@ i{
     margin:5px;
 }
 
+.container{
+    position:relative;
+    width:600px;
+}
+
 .loupe{
     position:absolute;
     width:200px;
-    left:-210px;
-    animation: Loupe 8s ease 1s forwards;
+    left:-1000px;
+    animation: Loupe 10s ease 1s forwards;
 }
 
 @keyframes Loupe{
-    0%{top:30px; left:-210px;}
+    0%{top:10px; left:-1000px;}
     
-    40%{top:160px;left:590px;transform:scale(2);}
+    40%{top:120px;left:250px;transform:scale(2);}
 
-    65%{top:520px;left:460px;transform:scale(2.6)}
+    65%{top:490px;left:100px;transform:scale(2.6)}
     
     75%{transform:scale(2.9)}
     
-    80%{top:520px;left:460px;transform:scale(2.6)}
+    80%{top:490px;left:100px;transform:scale(2.6)}
     
-    100%{top:50px;left:-300px; transform: scale(1);}
+    100%{top:20px;left:-1000px; transform: scale(1);}
 }
 
 @keyframes bouton{
